@@ -1,0 +1,45 @@
+/* Paleta de Colores */
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --fuentePrincipal: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*:after,*:before {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+
+/* Header */
+.header__bg {
+    background-image: url("../img/bg-principal.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.header__bg:before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 60%);
+    position: absolute;
+}
+.header__logo {
+    width: 50rem;
+    position: relative;
+}
